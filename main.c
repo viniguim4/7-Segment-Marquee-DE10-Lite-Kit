@@ -25,7 +25,7 @@ int main() {
 
       circular_string(char_data, length);
       
-      neorv32_cpu_delay_ms(200); // wait 250ms using busy wait
+      neorv32_cpu_delay_ms(200); // wait 200ms using busy wait
 
       neorv32_gpio_segment_clr(0);
       neorv32_gpio_segment_clr(1);
