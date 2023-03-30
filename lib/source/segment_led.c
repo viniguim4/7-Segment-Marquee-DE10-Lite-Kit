@@ -210,7 +210,7 @@ struct segment_led* neorv32_gpio_segment_retrieve_data(char data){
 void neorv32_gpio_segment_set(int segment, char data){
 
     int indentify_pins_segment_init = (segment + 1) << 3;
-    struct segment_led* segment_data = neorv32_gpio_segmentetrieve_data(data);
+    struct segment_led* segment_data = neorv32_gpio_segment_retrieve_data(data);
 
     for (int i = 0; i < segment_data->size; i++) {
         int pin_to_set = indentify_pins_segment_init + segment_data->pins[i];
